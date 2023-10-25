@@ -1,0 +1,82 @@
+/* Estilos generales */
+.container {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilos de la tabla */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 5px;
+    text-align: center;
+}
+
+.table thead {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Estilos de las filas con tonalidades de azul intercaladas */
+.table tbody tr:nth-child(even) {
+    background-color: #c0e2ff;
+    /* Fila par - Azul claro */
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #a6c6e0;
+    /* Fila impar - Azul más oscuro */
+}
+
+/* Estilos para hacer la tabla responsiva */
+@media (max-width: 768px) {
+    .table thead {
+        display: none;
+    }
+
+    .table,
+    .table tbody,
+    .table tr {
+        display: block;
+        width: 100%;
+    }
+
+    .table td {
+        display: block;
+        text-align: left;
+    }
+
+    .table tr {
+        margin-bottom: 10px;
+    }
+}
+
+/* Estilos para los botones de editar y eliminar */
+.btn-info,
+.btn-danger {
+    margin-right: 5px;
+}
+
+/* Estilos adicionales para dispositivos móviles */
+@media (max-width: 576px) {
+    .container {
+        padding: 10px;
+    }
+
+    .table td {
+        font-size: 14px;
+    }
+
+    /* Ajusta el espaciado y el tamaño de fuente para dispositivos móviles */
+    .btn-info,
+    .btn-danger {
+        margin: 5px 0;
+    }
+}

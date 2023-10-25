@@ -1,0 +1,45 @@
+/* estiloLogin.module.css */
+
+/* Estilos para el contenedor del formulario */
+.loginContainer {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los elementos del formulario */
+.loginContainer label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.loginContainer input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.loginContainer button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .loginContainer {
+        max-width: 100%;
+    }
+}
+
+/* Otros estilos específicos que desees agregar */
